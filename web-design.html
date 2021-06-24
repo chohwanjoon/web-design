@@ -65,11 +65,22 @@
         document.querySelector('body').style.backgroundColor='#333333';
         document.querySelector('h1').style.color='#ffffff';
         document.querySelector('h2').style.color='lightblue';
-            
         let liTag = document.querySelectorAll('li');
+        let aTag = document.querySelectorAll('a');
         for(let cnt=0;cnt<=4;cnt++){
             liTag[cnt].style.color='#ffffff';
+            aTag[cnt].style.color='#ffffff';
         }
+        let pTag = document.querySelectorAll('p');
+        for(let cnt=0;cnt<=2;cnt++){
+            pTag[cnt].style.color='#ffffff';
+        }
+        liTag[0].style.color='lightblue';
+        aTag[0].style.color='lightblue';
+       
+        document.querySelector('input').value='라이트모드';
+        document.querySelector('input').style.backgroundColor='#ffffff';
+        document.querySelector('input').style.color='#333333';
         
     ">
 
