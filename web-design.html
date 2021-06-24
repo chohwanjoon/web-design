@@ -12,7 +12,23 @@
 
     <!-- 내부스타일 -->
     <style>
+        body{
+            background-color:#ffffff;
+        }
         li:nth-child(1),li:nth-child(1)>a{color:#ff0000;}
+        input{
+            width:200px;
+            height:50px;
+            border-radius:25px;
+            font-weight:bold;
+            font-size:24px;
+            color:#ffffff;
+            background-color:#000000;
+            position:fixed;
+            left:50%;
+            bottom:500px;
+            transform:translateX(-50%);
+        }
     </style>
     
 </head>
@@ -38,11 +54,24 @@
             용도로 또 적합한 편. 사진의 편집 및 합성을 조금만 
             배우더라도 자유자재로 할 수 있으며, 기본적인 드로잉 
             툴과 필터의 기능도 있어 이를 활용하여 그림도 그릴 수 있다.
-            [4] 픽셀을 기본 단위로 하는 비트맵 방식의 툴이다.
+            픽셀을 기본 단위로 하는 비트맵 방식의 툴이다.
         </p>
         <p>
             어도비 일러스트레이터와 더불어 사실상 이미지 에디터로서 그래픽 툴이다.
         </p>
     </div>
+    
+    <input type="button" value="다크모드" onclick="
+        document.querySelector('body').style.backgroundColor='#333333';
+        document.querySelector('h1').style.color='#ffffff';
+        document.querySelector('h2').style.color='lightblue';
+            
+        let liTag = document.querySelectorAll('li');
+        for(let cnt=0;cnt<=4;cnt++){
+            liTag[cnt].style.color='#ffffff';
+        }
+        
+    ">
+
 </body>
 </html>
